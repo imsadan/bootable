@@ -1,0 +1,218 @@
+[
+    {
+        "className": "1班",
+        "classNumber": "1班",
+        "createtime": 1514131200000,
+        "enterSchool": 2018,
+        "id": 19,
+        "schoolId": 1,
+        "teacherid": 0
+    },
+    {
+        "className": "1班",
+        "classNumber": "1班",
+        "createtime": 1514131200000,
+        "enterSchool": 2017,
+        "id": 32,
+        "schoolId": 1,
+        "teacherid": 0
+    },
+    {
+        "className": "2班",
+        "classNumber": "2班",
+        "createtime": 1514217600000,
+        "enterSchool": 2017,
+        "id": 33,
+        "schoolId": 1,
+        "teacherid": 0
+    },
+    {
+        "className": "3班",
+        "classNumber": "3班",
+        "createtime": 1514217600000,
+        "enterSchool": 2017,
+        "id": 34,
+        "schoolId": 1,
+        "teacherid": 0
+    },
+    {
+        "className": "4班",
+        "classNumber": "4班",
+        "createtime": 1514217600000,
+        "enterSchool": 2017,
+        "id": 35,
+        "schoolId": 1,
+        "teacherid": 0
+    },
+    {
+        "className": "5班",
+        "classNumber": "5班",
+        "createtime": 1514217600000,
+        "enterSchool": 2017,
+        "id": 36,
+        "schoolId": 1,
+        "teacherid": 0
+    },
+    {
+        "className": "1班",
+        "classNumber": "1班",
+        "createtime": 1514217600000,
+        "enterSchool": 2016,
+        "id": 37,
+        "schoolId": 1,
+        "teacherid": 0
+    },
+    {
+        "className": "2班",
+        "classNumber": "2班",
+        "createtime": 1514217600000,
+        "enterSchool": 2016,
+        "id": 38,
+        "schoolId": 1,
+        "teacherid": 0
+    },
+    {
+        "className": "3班",
+        "classNumber": "3班",
+        "createtime": 1514217600000,
+        "enterSchool": 2016,
+        "id": 39,
+        "schoolId": 1,
+        "teacherid": 0
+    },
+    {
+        "className": "4班",
+        "classNumber": "4班",
+        "createtime": 1514217600000,
+        "enterSchool": 2016,
+        "id": 40,
+        "schoolId": 1,
+        "teacherid": 0
+    },
+    {
+        "className": "5班",
+        "classNumber": "5班",
+        "createtime": 1514217600000,
+        "enterSchool": 2016,
+        "id": 41,
+        "schoolId": 1,
+        "teacherid": 0
+    },
+    {
+        "className": "6班",
+        "classNumber": "6班",
+        "createtime": 1514217600000,
+        "enterSchool": 2016,
+        "id": 42,
+        "schoolId": 1,
+        "teacherid": 0
+    },
+    {
+        "className": "2班",
+        "classNumber": "2班",
+        "createtime": 1514476800000,
+        "enterSchool": 2000,
+        "id": 47,
+        "schoolId": 1,
+        "teacherid": 0
+    },
+    {
+        "className": "1班",
+        "classNumber": "1班",
+        "createtime": 1514476800000,
+        "enterSchool": 2011,
+        "id": 48,
+        "schoolId": 1,
+        "teacherid": 0
+    },
+    {
+        "className": "6班",
+        "classNumber": "6班",
+        "createtime": 1514476800000,
+        "enterSchool": 2017,
+        "id": 49,
+        "schoolId": 1,
+        "teacherid": 0
+    },
+    {
+        "className": "5班",
+        "classNumber": "5班",
+        "createtime": 1514476800000,
+        "enterSchool": 2011,
+        "id": 51,
+        "schoolId": 1,
+        "teacherid": 0
+    },
+    {
+        "className": "2班",
+        "classNumber": "2班",
+        "createtime": 1514476800000,
+        "enterSchool": 2011,
+        "id": 57,
+        "schoolId": 1,
+        "teacherid": 0
+    },
+    {
+        "className": "6班",
+        "classNumber": "6班",
+        "createtime": 1514476800000,
+        "enterSchool": 2011,
+        "id": 58,
+        "schoolId": 1,
+        "teacherid": 0
+    },
+    {
+        "className": "3班",
+        "classNumber": "3班",
+        "createtime": 1514476800000,
+        "enterSchool": 2000,
+        "id": 64,
+        "schoolId": 1,
+        "teacherid": 0
+    },
+    {
+        "className": "4班",
+        "classNumber": "4班",
+        "createtime": 1514476800000,
+        "enterSchool": 2000,
+        "id": 66,
+        "schoolId": 1,
+        "teacherid": 0
+    },
+    {
+        "className": "2班",
+        "classNumber": "2班",
+        "createtime": 1514476800000,
+        "enterSchool": 2018,
+        "id": 67,
+        "schoolId": 1,
+        "teacherid": 0
+    },
+    {
+        "className": "4班",
+        "classNumber": "4班",
+        "createtime": 1514476800000,
+        "enterSchool": 2018,
+        "id": 75,
+        "schoolId": 1,
+        "teacherid": 0
+    },
+    {
+        "className": "3班",
+        "classNumber": "3班",
+        "createtime": 1514476800000,
+        "enterSchool": 2018,
+        "id": 76,
+        "schoolId": 1,
+        "teacherid": 0
+    },
+    {
+        "className": "1班",
+        "classNumber": "1班",
+        "createtime": 1514476800000,
+        "enterSchool": 2000,
+        "id": 77,
+        "schoolId": 1,
+        "teacherid": 0
+    }
+]

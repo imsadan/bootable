@@ -1,0 +1,23 @@
+html,body{width: 100%;overflow:hidden;height:100%;}
+body{color:#000;overflow-x:hidden;position: relative;font-family: "Microsoft Yahei";background: #f4f4f4;min-width: 1000px;background: url(../images/bg.jpg) no-repeat center center;background-size: 100% 100%;}
+a{color:#1d1d1d;cursor:pointer;}
+a:hover{color:#e71d36;text-decoration:none;}
+.lwrapper{padding-top: 70px;}
+.lwrapper h1{font-size: 40px;color: #fff;text-align: center;background: url(../images/i1.png) no-repeat center center;font-weight: normal;}
+.lBox{float: right;width: 382px;height: 390px;background: #fff;box-shadow: 0 0 3px rgba(0,0,0,.5);margin-right: 10%;margin-top: 45px;}
+.lBox h2{background: url(../images/i1.gif) repeat-x;height: 49px;line-height: 49px;color: #333;padding: 0 25px;}
+.lBox h2 span{display: inline-block;color: #000;border-bottom: 4px solid #fff;line-height: normal;font-size: 17px;font-weight: normal;padding: 4px 0;vertical-align: middle;position: relative;top:-4px;}
+.lcont{padding: 25px 25px 0 25px;}
+.lItem{margin-top: 32px;}
+.lItem label{font-size: 16px;width: 65px;margin-left: 20px;}
+.lItem .infor{width: 245px;font-size: 16px;}
+.lItem .infor span{display: inline-block;margin-right: 18px;}
+.lItem .infor span input{margin-right: 10px;}
+.lItem .infor input.int{width: 147px;height: 21px;line-height: 21px;border:1px solid #aac2d7;padding: 0 5px;}
+.ibtn{width: 236px;margin: 0 auto;padding-top: 80px;}
+.ibtn .btn{display: inline-block;width: 80px;height: 30px;line-height: 30px;text-align: center;color: #fff;background: #275199;font-size: 14px;border-radius: 5px;}
+
+
+
+
+

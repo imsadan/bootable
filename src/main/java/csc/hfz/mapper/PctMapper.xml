@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="csc.hfz.mapper.PctMapper">
+
+    <!-- Province实体类、Province表映射,注意实体类Province和表名应该一致,字段下面可配置 -->
+	<resultMap id="ProvinceMap" type="csc.hfz.pojo.Province">
+		<result property="pid" column="pid" jdbcType="INTEGER"/>
+		<result property="pname" column="pname" jdbcType="VARCHAR"/>
+	</resultMap>
+
+	<sql id="Base_Province_List">pid,pname</sql>
+
+	<select id="queryProvince" resultMap="ProvinceMap" resultType="csc.hfz.pojo.Province">
+		SELECT <include refid="Base_Province_List"/> FROM province
+	</select>
+ 
+</mapper>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="csc.hfz.mapper.DayclothsMapper" >
+  <resultMap id="BaseResultMap" type="csc.hfz.pojo.Daycloths" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="wei" property="wei" jdbcType="VARCHAR" />
+    <result column="jin" property="jin" jdbcType="VARCHAR" />
+    <result column="numbers" property="numbers" jdbcType="INTEGER" />
+    <result column="years" property="years" jdbcType="VARCHAR" />
+    <result column="months" property="months" jdbcType="VARCHAR" />
+    <result column="days" property="days" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    id, wei, jin, numbers, years, months, days
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="csc.hfz.pojo.DayclothsExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from daycloths
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from daycloths
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from daycloths
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <delete id="deleteByExample" parameterType="csc.hfz.pojo.DayclothsExample" >
+    delete from daycloths
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="csc.hfz.pojo.Daycloths" >
+    insert into daycloths (id, wei, jin, 
+      numbers, years, months, 
+      days)
+    values (#{id,jdbcType=BIGINT}, #{wei,jdbcType=VARCHAR}, #{jin,jdbcType=VARCHAR}, 
+      #{numbers,jdbcType=INTEGER}, #{years,jdbcType=VARCHAR}, #{months,jdbcType=VARCHAR}, 
+      #{days,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="csc.hfz.pojo.Daycloths" >
+    insert into daycloths
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="wei != null" >
+        wei,
+      </if>
+      <if test="jin != null" >
+        jin,
+      </if>
+      <if test="numbers != null" >
+        numbers,
+      </if>
+      <if test="years != null" >
+        years,
+      </if>
+      <if test="months != null" >
+        months,
+      </if>
+      <if test="days != null" >
+        days,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="wei != null" >
+        #{wei,jdbcType=VARCHAR},
+      </if>
+      <if test="jin != null" >
+        #{jin,jdbcType=VARCHAR},
+      </if>
+      <if test="numbers != null" >
+        #{numbers,jdbcType=INTEGER},
+      </if>
+      <if test="years != null" >
+        #{years,jdbcType=VARCHAR},
+      </if>
+      <if test="months != null" >
+        #{months,jdbcType=VARCHAR},
+      </if>
+      <if test="days != null" >
+        #{days,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="csc.hfz.pojo.DayclothsExample" resultType="java.lang.Integer" >
+    select count(*) from daycloths
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update daycloths
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=BIGINT},
+      </if>
+      <if test="record.wei != null" >
+        wei = #{record.wei,jdbcType=VARCHAR},
+      </if>
+      <if test="record.jin != null" >
+        jin = #{record.jin,jdbcType=VARCHAR},
+      </if>
+      <if test="record.numbers != null" >
+        numbers = #{record.numbers,jdbcType=INTEGER},
+      </if>
+      <if test="record.years != null" >
+        years = #{record.years,jdbcType=VARCHAR},
+      </if>
+      <if test="record.months != null" >
+        months = #{record.months,jdbcType=VARCHAR},
+      </if>
+      <if test="record.days != null" >
+        days = #{record.days,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update daycloths
+    set id = #{record.id,jdbcType=BIGINT},
+      wei = #{record.wei,jdbcType=VARCHAR},
+      jin = #{record.jin,jdbcType=VARCHAR},
+      numbers = #{record.numbers,jdbcType=INTEGER},
+      years = #{record.years,jdbcType=VARCHAR},
+      months = #{record.months,jdbcType=VARCHAR},
+      days = #{record.days,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="csc.hfz.pojo.Daycloths" >
+    update daycloths
+    <set >
+      <if test="wei != null" >
+        wei = #{wei,jdbcType=VARCHAR},
+      </if>
+      <if test="jin != null" >
+        jin = #{jin,jdbcType=VARCHAR},
+      </if>
+      <if test="numbers != null" >
+        numbers = #{numbers,jdbcType=INTEGER},
+      </if>
+      <if test="years != null" >
+        years = #{years,jdbcType=VARCHAR},
+      </if>
+      <if test="months != null" >
+        months = #{months,jdbcType=VARCHAR},
+      </if>
+      <if test="days != null" >
+        days = #{days,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="csc.hfz.pojo.Daycloths" >
+    update daycloths
+    set wei = #{wei,jdbcType=VARCHAR},
+      jin = #{jin,jdbcType=VARCHAR},
+      numbers = #{numbers,jdbcType=INTEGER},
+      years = #{years,jdbcType=VARCHAR},
+      months = #{months,jdbcType=VARCHAR},
+      days = #{days,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  
+    <!-- 根据分页数据start 和size查询数据 -->
+	<select id="findclothsByPage" parameterType="Map" resultMap="BaseResultMap">
+		select
+		<include refid="Base_Column_List" />
+		from daycloths where  years = #{Year} and months = #{Month}
+		<if test="start!=null and size!=null">
+			limit #{start},#{size}
+		</if>
+	</select>
+	
+	<!-- 查询记录总数 -->
+	<select id="selectCount" resultType="int" parameterType="String">
+		select count(*) from daycloths  where  years = #{0} and months = #{1} 
+	</select> 
+	
+	<!-- 按年月日过滤查询 -->
+	<select id="getClothsByDays" resultMap="BaseResultMap" parameterType="String">
+		select * from daycloths  where  years = #{0} and months = #{1} and days=#{2}
+	</select> 
+	
+	<!-- 按年月纬数过滤查询 -->
+	<select id="LookStaticOfDayByWei" resultMap="BaseResultMap" parameterType="String">
+		select * from daycloths  where  years = #{0} and months = #{1} and wei=#{2} and jin=#{3}
+	</select> 
+  
+</mapper>

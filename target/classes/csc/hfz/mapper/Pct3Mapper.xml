@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="csc.hfz.mapper.Pct3Mapper">
+
+
+	<select id="queryTown"  resultType="csc.hfz.pojo.Town">
+		SELECT * FROM town where 1=1 and cid=#{cid,jdbcType=INTEGER}
+	</select> 
+</mapper>

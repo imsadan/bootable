@@ -1,0 +1,135 @@
+.helloName{
+	position: absolute;
+	color: #000;
+	font-size: 25px;;
+	top: 1px;
+	right: 150px;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.exit{
+	position: absolute;
+	color: #000;
+	font-size: 30px;;
+	top: 0px;
+	right: 0px;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	background-color: #91CF00;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.title{
+	color: #fff;
+	font-size: 40px;
+	padding-top: 25px;
+	margin-left: 70px;
+}
+.systemName{
+	color: #fff;
+	font-size: 20px;
+	margin-top: -25px;
+	margin-left: 200px;
+}
+.header{
+	height: 100px;
+	background-color: #A3CF3F;
+}
+.middle{
+	width: 100%;
+	/*margin: 0px auto;*/
+}
+.middle .leftMenu{
+	width: 260px;
+	/*height: 100%;*/
+	background-color: #EFEEEE;
+	border-right: 1.5px solid #C0C0C0;
+	/*float: left;*/
+}
+.middle .leftMenu .topMenu{
+	height: 70px;
+	background-color: #EFEEEE;
+}
+.middle .leftMenu .topMenu img{
+	/*margin: 11px;
+	float: left;*/
+}
+.middle .leftMenu .topMenu .changeMenu{
+	cursor: pointer;
+}
+.middle .leftMenu .topMenu .banshi{
+	/*padding-left: 23px;*/
+}
+.middle .leftMenu .topMenu .menuTitle{
+	text-align: center;
+	color: #000;
+	/*float: left;*/
+	line-height: 42px;
+	font-size: 16px;
+	width: 120px;
+}
+.menu_list {
+	width: 260px;
+	background: #354045;
+}
+.menu_list ul li{
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+.menu_list ul li .fuMenu{
+	color: #000;
+	font-size: 14px;
+	cursor: pointer;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	width: 260px;
+	border-top: 2px solid #C0C0C0;
+	float: left;
+}
+.menu_list ul li .xiala{
+	float: left;
+	margin-left: -50px;
+	margin-top: 27px;
+}
+.menu_list ul li .div1 {
+	width: 100%;
+	height: auto;
+	float: left;
+}
+.menu_list ul li .div1 .zcd{
+	color: #000;
+	font-size: 14px;
+	height: 60px;
+	background-color: #fff;
+	margin-bottom: 1px;
+	cursor: pointer;
+	line-height: 60px;
+	text-align: center;
+	width: 260px;
+}
+.div1 {
+	height: 200px;
+	display: none;
+}
+.menu_list ul li .div1 .zcd:hover{ color: #FFF; background-color: #EFEEEE; font-weight: bold; }
+.removes{
+	color: #0FB9EF !important;
+	border-left: 3px solid #0FB9EF;
+}
+.center{
+	left: 280px;
+	position: absolute;
+	top: 100px;
+	width:100%;
+}
+.image{
+	position: relative;
+}
